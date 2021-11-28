@@ -7,4 +7,9 @@
 // #include "programs/examples/ex06_flow.h"
 
 // Lab programs
-#include "programs/labs/lab01.h"
+//#include "programs/labs/lab01.h"
+//#include "programs/labs/lab02.h"
+
+//lab 7
+//#include "modules/attitude_estimator.h"
+
