@@ -28,4 +28,13 @@
 // Vertical Estimator - Lab 9
 #include "modules/vertical_estimator.h"
 
+// Vertical Controller - Lab 10
+#include "modules/vertical_controller.h"
+
+// Horizontal Estimator - Lab 11
+#include "modules/horizontal_estimator.h"
+
+// Horizontal Controller - Lab 12
+#include "modules/horizontal_controller.h"
+
 #endif

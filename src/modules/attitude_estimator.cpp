@@ -36,7 +36,7 @@ void AttitudeEstimator :: init ()
 // Estimate Euler angles (rad ) and angular velocities ( rad /s)
 void AttitudeEstimator :: estimate ()
 {
-imu.read ();
+imu.read();
 p = imu.gx - pbias;
 q = imu.gy - qbias;
 r = imu.gz - rbias;

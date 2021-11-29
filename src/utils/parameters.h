@@ -47,5 +47,19 @@ const float zeta = sqrt(2)/2 ;// fator de amortecimento
 const float l1 = wc2*wc2;
 const float l2 = 2*zeta*wc2;
 
+// Lab 10
+const float zeta_10 = 0.86; //Overshoot de 0.005
+const float wn_10 = 4/(zeta_10 *2); // Ts = 2s
+const float kp_10 = wn_10 * wn_10;
+const float kd_10 = 2 * zeta_10 * wn_10;
+
+// Lab 11
+const float yy = 42*2*pi/360;
+const float sigma = (2*tan(yy/2))/(420*dt);
+const float wc_11 = 50; // rad/s
+
+// Lab 12
+const float kp_12 = 0;
+const float kd_12 = 0;
 
 #endif
