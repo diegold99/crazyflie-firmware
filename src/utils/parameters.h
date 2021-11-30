@@ -59,7 +59,7 @@ const float sigma = (2*tan(yy/2))/(420*dt);
 const float wc_11 = 50; // rad/s
 
 // Lab 12
-const float kp_12 = 0;
-const float kd_12 = 0;
+const float kp_12 = kp_10;
+const float kd_12 = kd_10;
 
 #endif

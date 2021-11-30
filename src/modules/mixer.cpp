@@ -23,10 +23,18 @@ motor_4 = control_motor ( omega_4 );
 // Convert total trust force (N) and torques (N.m) to angular velocities ( rad /s)
 void Mixer :: mixer ( float f_t , float tau_phi , float tau_theta , float tau_psi )
 {
-(...) //igual lab 5 
+    float divA= 4*kl;
+    float divB = 4*kl*l;
+    float divC = 4*kd;
+
+    omega_1 = sqrt(f_t/divA - tau_phi/divB - tau_theta/divB - tau_psi/divC);
+    omega_2 = sqrt(f_t/divA - tau_phi*divB + tau_theta/divB + tau_psi/divC);
+    omega_3 = sqrt(f_t/divA + tau_phi/divB + tau_theta/divB - tau_psi/divC);
+    omega_4 = sqrt(f_t/divA + tau_phi/divB - tau_theta/divB + tau_psi/divC);
 }
 // Convert desired angular velocity ( rad /s) to PWM signal (%)
 float Mixer :: control_motor ( float omega )
 {
-(...)
+    //PWM = a2*omega*omega + a1*omega
+    return a2*omega*omega + a1*omega;
 }

@@ -19,7 +19,7 @@
 #include "drivers/vl53l1x.h"    // Range sensor
 #include "drivers/pmw3901.h"    // Optical flow sensor
 
-// Mixer
+// Mixer - Lab 5 e 6
 #include "modules/mixer.h"
 
 // Attitude Estimator - Lab 7
