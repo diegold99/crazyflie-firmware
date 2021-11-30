@@ -16,9 +16,8 @@ float omega_4 ;
 // Converts desired angular velocity (rad/s) to PWM signal (%)
 float control_motor ( float omega )
 {
-    //float PWM = a2 * pow()
-    float PWM = (a2*pow(omega, 2)) + (a1*omega);
-    return PWM;
+    //PWM = a2*omega*omega + a1*omega
+    return a2*omega*omega + a1*omega;
 }
 
 // Converts total trust force (N) and torques (N.m) to angular velocities (rad/s)

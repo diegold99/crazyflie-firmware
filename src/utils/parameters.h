@@ -39,14 +39,13 @@ const float kd_theta = 26.67;
 const float kp_psi = 60.07;
 const float kd_psi = 13.33;
 
-
 // Lab 9 - Frequência de correção
 const float dt20 = 1/20;
 const float wc2 = 10; // rad/s
 const float zeta = sqrt(2)/2 ;// fator de amortecimento
 const float l1 = wc2*wc2;
 const float l2 = 2*zeta*wc2;
-
+const float dt_range = 1/20; //20Hz
 // Lab 10
 const float zeta_10 = 0.86; //Overshoot de 0.005
 const float wn_10 = 4/(zeta_10 *2); // Ts = 2s
