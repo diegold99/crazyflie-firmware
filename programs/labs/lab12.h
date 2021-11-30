@@ -2,13 +2,14 @@
 #include "crazyflie.h"
 
 // Crazyflie controller objects
-Mixer mixer ;
-AttitudeEstimator att_est ;
-AttitudeController att_cont ;
-VerticalEstimator ver_est ;
-VerticalController ver_cont ;
-HorizontalEstimator hor_est ;
-HorizontalController hor_cont ;
+Mixer mixer;
+AttitudeEstimator att_est;
+AttitudeController att_cont;
+VerticalEstimator ver_est;
+VerticalController ver_cont;
+HorizontalEstimator hor_est;
+HorizontalController hor_cont;
+
 // Ticker objects
 Ticker tic , tic_range ;
 // Interrupt flag and counter variables

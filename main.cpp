@@ -14,9 +14,9 @@
 //#include "programs/labs/lab05.h"
 
 //lab 6
-#include "programs/labs/lab06a.h"
-//#include "programs/labs/lab06b.h"
-
+// #include "programs/labs/lab06a.h"
+// #include "programs/labs/lab06b.h"
+#include "programs/labs/lab06c.h"
 //lab 7
 //#include "modules/attitude_estimator.h"
 //#include "programs/labs/lab07.h"

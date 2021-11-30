@@ -20,6 +20,7 @@ void VerticalEstimator :: predict ( float f_t)
         w = w + ((1/m)*f_t - g) * dt;   
     }
 }
+
 // Correct vertical position and velocity with measurement
 void VerticalEstimator :: correct (float phi, float theta)
 {

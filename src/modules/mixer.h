@@ -1,7 +1,8 @@
-# ifndef mixer_h
-# define mixer_h
-# include "mbed.h"
-# include "crazyflie.h"
+#ifndef mixer_h
+#define mixer_h
+
+#include "mbed.h"
+#include "crazyflie.h"
 
 // Mixer class
 class Mixer
@@ -21,10 +22,10 @@ class Mixer
         // Angular velocities ( rad /s)
         float omega_1 , omega_2 , omega_3 , omega_4 ;
         // Convert total thrust force (N) and torques (N.m) to angular velocities (rad/s)
-        void mixer ( float f_t , float tau_phi , float tau_theta , float tau_psi );
+        void mixer(float f_t , float tau_phi , float tau_theta , float tau_psi);
         // Convert desired angular velocity ( rad /s) to PWM signal (%)
-        float control_motor ( float omega );
+        float control_motor(float omega);
 
         bool armado;
     };
-# endif
+#endif
