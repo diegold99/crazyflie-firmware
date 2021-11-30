@@ -14,7 +14,7 @@ class VerticalEstimator
         // Predict vertical position and velocity from model
         void predict( float f_t);
         // Correct vertical position and velocity with measurement
-        void correct( float phi , float theta );
+        void correct(float phi, float theta);
         // Vertical position (m) and velocity (m/s) estimations
         float z, w;
     private :
